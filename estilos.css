@@ -1,4 +1,8 @@
 /* estilos gerais da página */
+*{
+  box-sizing: border-box;
+}
+
 html, body {
   min-height: 100%;
 }
@@ -9,7 +13,10 @@ body {
   border-left: 3px double silver;
   border-right: 3px double silver;
   padding: 0 2em;
-  background-image: linear-gradient(to bottom right, #d6fdc6, #d0d0ff, #feffc1);
+  background-image:url(background.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #333;
   font-family: sans-serif;
 }
@@ -18,14 +25,14 @@ h1 {
   margin-top: 0;
   font-family: "Comic Sans", cursive;
   font-weight: normal;
-  color: purple;
+  color: orange;
 }
 
 h1::after {
   content: " ";
   display: block;
   width: 100%;
-  background-image: linear-gradient(to right, #5f0d5f, transparent);
+  background-image: linear-gradient(to right, #ee8800, transparent);
   height: 2px;
 }
 
@@ -33,7 +40,7 @@ h2 {
   clear: both;
   color: black;
   font-family: "Comic Sans", cursive;
-  background-image: linear-gradient(to right, yellow 1%, rgba(255,255,255,.5) 1%, transparent);
+  background-image: linear-gradient(to right, yellow 1%, rgba(255,255,0,.5) 1%, transparent);
   padding: 0.15em 0.15em 0.15em 1em;
 }
 
@@ -47,6 +54,7 @@ h2 {
   width: 125px;
   border: 2px solid yellow;
   box-shadow: 3px 3px 3px silver;
+  margin-bottom: 20px;
 }
 
 .foto-ovelha:nth-of-type(odd) {
@@ -61,6 +69,7 @@ h2 {
 
 p {
   text-align: justify;
+  text-justify: auto;
   line-height: 1.5em;
 }
 
